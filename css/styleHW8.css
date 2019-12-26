@@ -1,0 +1,64 @@
+main {
+    width: 800px;
+    height: 600px;
+    background-color: #f4f4f4;
+    margin: auto 0;
+    position: absolute;
+    left: 50%;  
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .task1 {
+        position: relative;
+        width: 375px;
+        height: 200px;
+        background-image: linear-gradient(30deg, #332dc8, #f6d245);
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        
+    }
+    
+    .task1:hover {
+        box-shadow: 2px 2px 15px black;
+        transform: rotate(-30deg);
+        transform-origin: top center;
+        outline: 2px solid blue;
+    }
+    
+    .task2 {
+      width: 200px;
+      height: 200px;
+      margin: auto;
+      background: red;
+      animation-name: rotetion;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      position: relative;
+    }
+    @keyframes rotetion {
+       /*from {
+         transform: rotate(0deg);
+         background: #d845f3;
+       }
+       to {
+         transform: rotate(360deg);
+         background: #8b45f3;
+       }*/
+      0% {
+        transform: rotate(0deg);
+        background: #d845f3;
+      }
+      50% {
+        background: #8b45f3;
+      }
+      100% {
+        transform: rotate(360deg);
+        background: #d845f3;
+      }
+    }
+    
+    
